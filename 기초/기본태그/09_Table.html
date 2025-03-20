@@ -1,0 +1,81 @@
+<DOCTYPE html>
+    <html lang="kr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            table, th, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+            th {
+                background-color: palevioletred
+            }
+        </style>
+    </head>
+    <body>
+        <h2>8. HTML 테이블</h2>
+        <hr/>
+        <p>
+            테이블은 행과 열로 이루어진 데이터를 표현할 때 사용합니다.<br/>
+            <!--
+            table : 테이블을 정의하는 태그
+            thead : 테이블의 헤더 영역을 정의하는 태그
+            tbody : 테이블의 데이터 항목을 정의하는 태그
+            tr : 테이블의 행을 정의하는 태그
+            td : 하나의 데이터를 입력
+            th : 테이블의 헤더 셀을 정의하는 태그
+            -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>이름</th>
+                        <th>전화번호</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>홍길동</td>
+                        <td>010-1234-5678</td>
+                    </tr>
+                    <tr>
+                        <td>이순신</td>
+                        <td>010-9876-5432</td>
+                    </tr>
+                </tbody>
+            </table><br/>
+            결과를 보았을 떄, 테이블 형태가 나오긴 하지만 밋밋한 느낌이 있다.<br/>
+            이 때 CSS3를 이용하면 테이블을 더 이쁘게 꾸며줄 수 있다.<br/>
+
+        </p><br/>
+        <h2>HTML 테이블의 행, 열 합치기</h2><hr>
+        <p>
+            <b>열 합치기</b><br>
+            colspan 속성을 이용하면 열을 합칠 수 있다.
+            <br><br>
+            <table>
+                <thead>
+                    <tr>
+                        <th>이름</th>
+                        <th>금액</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>홍길동</td>
+                        <td>10만원</td>
+                    </tr>
+                    <tr>
+                        <td>이순신</td>
+                        <td>20만원</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">총액 : 30만원</td>
+                    </tr>
+                </tbody>
+            </table><br/>
+        </p>
+    </body>
+</html>
