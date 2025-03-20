@@ -1,0 +1,61 @@
+<DOCTYPE html>
+    <html lang="kr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+    </head>
+    <body>
+        <!--여기서는 HTML 링크 태그에 대해 알아보자-->
+        <h1>링크 태그</h1>
+        <hr/>
+        <p>
+            Html에는 많은 하이퍼링크가 있으며, 간단히 링크라고도 합니다.
+        </p>
+        <br/>
+        <p>
+            <a href="https://www.google.com">구글</a>
+            <!-- 여기서 a 태그는 anchor 태그라고 부른다. -->
+            <!-- 여기서 href 속성은 hypertext reference의 약자로, 링크가 연결될 주소를 지정한다. -->
+            <a href="https://www.google.com" target="_self">구글</a> <!-- 현재 페이지에서 열림 -->
+            <a href="https://www.google.com" target="_blank">구글</a> <!-- 새 탭에서 열림 -->
+            <a href="https://www.google.com" target="_parent">구글</a> <!-- 부모 프레임에서 열림 -->
+            <a href="https://www.google.com" target="_top">구글</a> <!-- 전체 화면에서 열림 -->
+        </p>
+        <br/>
+        <p>
+            <h3>링크는 4가지의 상태가 있습니다.</h3>
+            <ul>
+                <li>a:link - 방문하지 않은 링크, 파란색</li>
+                <li>a:visited - 방문한 링크, 보라색</li>
+                <li>a:hover - 링크 위에 마우스를 올리면, 노란색, CSS3으로 사용자지정 가능.</li>
+                <li>a:active - 링크를 클릭하면, 빨간색</li>
+            </ul>
+            <br/>
+        </p>
+        <h3>HTML Link를 이용한 북마커</h3>
+        <hr/>
+        <p>
+            Bookmarker란, 링크를 눌렀을 때 본문에서 href가 가리키는 section으로 이동한다.<br/>
+            Bookmarker를 사용하기 위해서는 a tag에 id 속성이나 name 속성을 사용하여야 한다.<br/>
+            <br/>
+            <b>id 속성 사용</b><br/>
+
+            <a href="#article">기사보러 가기</a>
+            <h1 id="article">기사 본문</h1>
+            <br/>
+
+            <b>name 속성 사용</b><br/>
+
+            <a href="#article">기사보러 가기</a>
+            <h1><a name="article"></a>기사 본문</h1>
+            <!-- 위에서 링크를 클릭하면 아래에 있는 기사 본문으로 이동합니다. -->
+            <!-- 예를 들어, href="#article" 이라고 하면 위에서 링크를 클릭하면 
+             아래에 id=article 인 기사 본문으로 이동합니다. -->
+        </p>
+
+        
+    </body>
+</html>
