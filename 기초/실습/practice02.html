@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>practice02</title>
+    <style>
+      div {
+        background-color: green;
+      }
+      table {
+        height: 200px;
+      }
+      th {
+        height: 50px;
+        font-weight: bold;
+        font-size: 2em;
+        background-color: white;
+      }
+
+      table,
+      th,
+      td {
+        border: 2px solid black;
+        border-collapse: collapse;
+      }
+      a {
+        color: blue;
+      }
+      ul li {
+        list-style-type: desc;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>두 번쨰 연습</h1>
+    <br />
+    지금까지 배운 것을 정리해봅시다.<br /><br />
+    <h2>요약하기</h2>
+    <p>
+      테이블을 적용하기 위해 <font color="red">&lt;table&gt;</font>요소 사용
+    </p>
+    <br />
+    <p>목록화 하기 위해서 &lt;ul&gt; 또는 &lt;ol&gt;요소 사용</p>
+    <br /><br />
+
+    <div>
+      <table>
+        <h2>실습</h2>
+        <tr>
+          <th>무순서 리스트</th>
+          <th>순서 리스트</th>
+        </tr>
+        <tr>
+          <td>
+            <ol>
+              <li><a href="https://www.daum.net" target="_blank">다음</a></li>
+              <li>
+                <a href="https://www.naver.com" target="_blank">네이버</a>
+              </li>
+              <li><a href="https://www.google.com" target="_blank">구글</a></li>
+            </ol>
+          </td>
+          <td>
+            <h3>국내 포털 순위 <br />(2017년 상반기)</h3>
+            <ol>
+              <li>
+                <a href="https://www.naver.com" target="_blank">네이버(87%)</a>
+              </li>
+              <li>
+                <a href="https://www.daum.net" target="_blank">다음(10%)</a>
+              </li>
+              <li value="5">
+                <a href="https://www.google.com" target="_blank">구글(0.36%)</a>
+              </li>
+            </ol>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <br /><br />
+    <div class="muted text-right" style="font-size: 0.9em; margin: 10px 0">
+      마지막 편집일시 : 2020 7월 23일 6:15 오후
+    </div>
+  </body>
+</html>
