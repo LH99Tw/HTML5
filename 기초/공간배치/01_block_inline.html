@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h2>HTML 블록 요소와 인라인 요소</h2><hr>
+        <p>
+            앞서 배웠던 모든 HTML 태그는 블록 요소와 인라인 요소 중 하나에 속한다.<br>
+            <ul>
+                <li>블록 요소 : 줄바꿈이 일어나는 요소</li>
+                <li>인라인 요소 : 줄바꿈이 일어나지 않는 요소</li>
+            </ul><br>
+        </p>
+        <h3>블록 요소</h3><hr>
+        <p>
+            블록 형태의 속성을 가진 Tag들은 말그대로 네모 블록 모양을 가진다.<br>
+            항상 새로운 줄에서 시작하며, 해당 줄의 모든 너비를 차지한다.<br>
+            또한 블록 요소는 블록 요소 안에 블록 요소를 포함할 수 있지만, 인라인 요소는 인라인 요소 안에 블록 요소를 포함할 수 없다.<br>
+
+            <b>div 태그</b> : 블록 요소의 기본 태그<br>
+            <ul>
+                <li>다른 HTML 태그들을 묶어서 그룹화하는 태그</li>
+                <li>하나로 묶인 다른 HTML 태그에 CSS 스타일을 한번에 적용하는 데 자주 사용한다.</li>
+            </ul>
+            <p>예시</p><br>
+            <div style="border:1px solid black;">
+                <h1 style = "text-align:center;">HTML5 & CSS3</h1>
+                <p>HTML5와 CSS3를 이용한 웹 페이지 구조화</p>
+            </div>
+            <ul>
+                <li>border : 테두리 속성</li>
+                <li>text-align : 텍스트 정렬 속성</li>
+            </ul>
+        </p>
+        <p>블록 형태의 대표적인 태그 :<br>
+        div, p, ol, ul, li, h#, pre, blockquote, form, table, hr, header, footer, section, article, aside, details, summary ...
+        </p>
+        <h3>인라인 요소</h3><hr>
+        <p>
+            인라인 요소는 블록 요소와 달리 줄바꿈이 일어나지 않는다.<br>
+            <b>span 태그</b> : 인라인 요소의 대표적인 태그<br>
+            <ul>
+                <li>텍스트의 특정 부분을 강조하는데 자주 사용한다.</li>
+                <li>텍스트의 특정 부분에 CSS 스타일을 적용하기 위해 자주 사용한다.</li>
+            </ul>
+            <br>
+            예시<br>
+            <span style="color:red;">HTML5 & CSS3</span>를 공부하고 있습니다.<br>
+            <b>인라인 형태의 대표적인 태그</b> : span, a, q, b, em, small, strong, sup, sub, input, img, br, ...
+        </p>
+    </body>
+</html>

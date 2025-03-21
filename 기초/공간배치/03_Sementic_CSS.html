@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      header {
+        background-color: lightgrey;
+        height: 100px;
+      }
+      nav {
+        background-color: lightgrey;
+        height: 50px;
+      }
+      #main {
+        width: 100%;
+        height: 400px;
+        margin-top: 20px;
+        overflow: hidden;
+        border: 1px solid black;
+      }
+      section {
+        width: 50%;
+        background-color: lightgrey;
+        height: 150px;
+      }
+      article {
+        width: 60%;
+        margin-left: 100px;
+        background-color: yellow;
+        height: 100px;
+      }
+      aside {
+        float: right;
+        position: relative;
+        top: 0;
+        right: 0;
+        width: 40%;
+        margin-left: 5px;
+        height: 600px;
+        background-color: lightgrey;
+        height: 150px;
+      }
+      footer {
+        background-color: lightgrey;
+        height: 100px;
+      }
+      header,
+      nav,
+      section,
+      article,
+      footer,
+      aside {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Sementic 태그</h2>
+    <hr />
+    <header>
+      <h2>header 부분입니다.</h2>
+    </header>
+    <nav>
+      <h2>nav 부분입니다.</h2>
+    </nav>
+    <main>
+      <section>
+        <p>section1 부분입니다.</p>
+        <article>
+          <p>article1 부분입니다.</p>
+        </article>
+      </section>
+      <section>
+        <p>section2 부분입니다.</p>
+        <article>
+          <p>article2 부분입니다.</p>
+        </article>
+      </section>
+      <aside>
+        <p>aside 부분입니다.</p>
+      </aside>
+    </main>
+    <footer>
+      <p>footer 부분입니다.</p>
+    </footer>
+  </body>
+</html>

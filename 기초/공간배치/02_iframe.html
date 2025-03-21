@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h2>iframe 태그</h2><hr>
+        <p>HTML iframe이란 inline frame의 약자로, 웹 페이지 내에 웹 페이지를 포함할 수 있는 태그이다.</p><br>
+        <h3>사용법</h3><br>
+        <p>
+            iframe src = "웹 페이지 주소 URL" title = "내용"></iframe><br>
+            width, height 속성을 이용해 크기를 조절할 수 있다.<br>
+            <br>
+            <h1>iframe을 이용하여 웹 페이지에 다른 웹 페이지 삽입하기</h1>
+            <iframe src="https://wikidocs.net/" title="내용" width="100%" height="300px"></iframe>
+        </p>
+        <br>
+        <h3>iframe의 테두리 변경 및 삭제</h3>
+        <iframe 
+        src="https://wikidocs.net/" 
+        title="내용" 
+        width="100%" 
+        height="300px"
+        style="border:2px dashed red;">
+        </iframe>
+        <br>
+        <h3>a tag를 이용하여 iframe에 여러 개의 웹 페이지 삽입하기</h3>
+        <p>name 속성을 이용하면 여러 개의 웹 페이지 삽입이 가능하다.</p>
+        <iframe src = "https://google.com" title="내용" name="iframe1" width="100%" height="300px"></iframe>
+        <a href = "https://google.com" target = "iframe1">구글</a>
+        <a href = "https://naver.com" target = "iframe1">네이버</a>
+
+    </body>
+</html>
