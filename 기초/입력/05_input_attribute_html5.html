@@ -1,0 +1,82 @@
+<DOCTYPE html>
+  <html lang="ko">
+    <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
+    <body>
+        <h2>html5에서 새로 추가된 input 태그의 속성</h2>
+        <ul>
+            <li>autocomplete 속성</li>
+            <li>autofocus 속성</li>
+            <li>form 속성</li>
+            <li>formaction 속성</li>
+            <li>formmethod 속성</li>
+            <li>formtarget 속성</li>
+            <li>width & height 속성</li>
+            <li>min & max 속성</li>
+            <li>multiple 속성</li>
+            <li>placeholder 속성</li>
+            <li>required 속성</li>
+            <li>step 속성</li>
+        </ul>
+        <hr>
+        <h3>autocomplete 속성</h3>
+        <p>input 태그의 자동 완성 기능을 설정한다.</p>
+        <form action="#" method="#">
+            이름 : <input type="text" name="name"/><br>
+            나이 : <input type="number" name="age" min="1" max="100"/><br>
+            주소 : <input type="text" name="address" autocomplete="off"/><br>
+            <input type="submit" value="전송"/>
+        </form>
+        <hr>
+        <h3>autofocus 속성</h3>
+        <p>input 태그를 페이지가 로드될 때 자동으로 포커스되도록 한다.</p>
+        <form action="#" method="#">
+            아이디 : <input type="text" name="id" autofocus/><br>
+            비밀번호 : <input type="password" name="pwd"/><br>
+            <input type="submit" value="전송"/>
+        </form>
+        <hr>
+        <h3>form 속성</h3>
+        <p>form 속성은 위치에 상관없이 form 태그에 포함될 수 있다.</p>
+        <form action="#" method="#" id="form1">
+            이름 : <input type="text" name="name" form="form1"/><br>
+            나이 : <input type="number" name="age" form="form1"/><br>          
+        </form>
+        <hr>
+        <h3>formaction 속성</h3>
+        <p>formaction 속성은 폼 데이터를 제출할 때 사용할 URL을 지정한다.</p>
+        <form action="#" method="#" id="form2">
+            이름 : <input type="text" name="name" form="form2"/><br>    
+            나이 : <input type="number" name="age" form="form2"/><br>
+            <input type="submit" value="전송"/>
+        </form>
+        <hr>
+        <h3>formmethod 속성</h3>
+        <p>formmethod 속성은 폼 데이터를 제출할 때 사용할 HTTP 메서드를 지정한다.</p>
+        <form action="#" method="get" id="form3">
+            이름 : <input type="text" name="name" form="form3"/><br>
+            나이 : <input type="number" name="age" form="form3"/><br>
+            <input type="submit" value="전송"/>
+        </form>
+        <hr>
+        <h3>formtarget 속성</h3>
+        <p>formtarget 속성은 입력받은 페이지를 처리한 결과 페이지를 어디에 출력할지 설정합니다. 이 속성은 submit과 image 타입의 input 태그에서만 사용할 수 있습니다.</p>
+        <form action="#" method="#" id="form4">
+            인증번호를 입력해주세요 : <input type="text" name="authcode" form="form4"/><br>
+            <input type="submit" value="전송"/>
+            <input type="submit" value="새창열기" formtarget="_blank"/>
+        </form>
+        <hr>
+        <h3>width & height 속성</h3>
+        <p>width & height 속성은 input 태그의 너비와 높이를 지정한다.</p>
+        <form action="#" method="#">
+            이름 : <input type="text" name="name" width="100" height="50"/><br>
+            
+        </form>
+        
+
+    </body>
+</DOCTYPE>

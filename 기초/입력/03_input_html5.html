@@ -1,0 +1,129 @@
+<DOCTYPE html>
+  <html lang="ko">
+    <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+    </head>
+    <body>
+      <h2>input 태그</h2>
+      <hr />
+      <p>
+        HTML5로 넘어오면서 더 <b>다양한 타입</b>의 input 태그가 추가되었습니다.
+      </p>
+      <ol>
+        <li>color : 색상 선택</li>
+        <li>date : 날짜 선택</li>
+        <li>time : 시간 선택</li>
+        <li>datetime-local : 날짜와 시간 선택</li>
+        <li>month : 월 선택</li>
+        <li>week : 주 선택</li>
+        <li>number : 숫자 입력</li>
+        <li>range : 숫자 범위 선택</li>
+        <li>email : 이메일 입력</li>
+        <li>tel : 전화번호 입력</li>
+        <li>url : 주소 입력</li>
+        <li>search : 검색 입력</li>
+      </ol>
+      <hr />
+      <h3>색상 선택</h3>
+      <p>예제1</p>
+      <form action="#" method="#">
+        색상을 선택해주세요 : <br />
+        <input type="color" name="color" />
+      </form>
+      <hr />
+      <h3>날짜 선택</h3>
+      <p>예제2</p>
+      <form action="#" method="#">
+        날짜를 선택해주세요 : <br />
+        <input type="date" name="date" />
+      </form>
+      <p>예제3</p>
+      <form action="#" method="#">
+        날짜를 선택해주세요 : <br />
+        <input type="date" name="date" min="2025-01-01" max="2025-12-31" />
+      </form>
+      <hr />
+      <h3>시간 선택</h3>
+      <p>예제4</p>
+      <form action="#" method="#">
+        시간을 선택해주세요 : <br />
+        <input type="time" name="time" />
+      </form>
+      <hr />
+      <h3>날짜와 시간 선택</h3>
+      <p>예제5</p>
+      <form action="#" method="#">
+        날짜와 시간을 선택해주세요 : <br />
+        <input type="datetime-local" name="datetime-local" />
+      </form>
+      <hr />
+      <h3>년도 & 월 선택</h3>
+      <p>예제6</p>
+      <form action="#" method="#">
+        월을 선택해주세요 : <br />
+        <input type="month" name="month" />
+      </form>
+      <hr />
+      <h3>주 선택</h3>
+      <p>예제7</p>
+      <form action="#" method="#">
+        주를 선택해주세요 : <br />
+        <input type="week" name="week" />
+      </form>
+      <hr />
+      <h3>숫자 입력</h3>
+      <p>예제8</p>
+      <form action="#" method="#">
+        숫자를 입력해주세요 : <br />
+        <input type="number" name="number" />
+      </form>
+      <hr />
+      <h3>숫자 범위 선택</h3>
+      <p>예제9</p>
+      <form action="#" method="#">
+        숫자 범위를 선택해주세요 : <br />
+        <input type="range" name="range" />
+      </form>
+      <p>위의 결과로 보았을 때, 범위 지정에 제한이 없다.</p>
+      <p>예제10</p>
+      <form action="#" method="#">
+        숫자 범위를 선택해주세요 : <br />
+        1<input type="range" name="range" min="0" max="100" step="10" />100
+      </form>
+      <hr />
+      <h3>이메일 입력</h3>
+      <p>예제11</p>
+      <form action="#" method="#">
+        이메일을 입력해주세요 : <br />
+        <input type="email" name="email" />
+        <input type="submit" value="전송" />
+      </form>
+      <hr />
+      <h3>전화번호 입력</h3>
+      <p>예제12</p>
+      <form action="#" method="#">
+        전화번호를 입력해주세요 : <br />
+        <input type="tel" name="tel" />
+      </form>
+      <hr />
+      <h3>주소 입력</h3>
+      <p>예제13</p>
+      <form action="#" method="#">
+        주소를 입력해주세요 : <br />
+        <input type="url" name="url" />
+        <input type="submit" value="전송" />
+      </form>
+      <hr />
+      <h3>검색 입력</h3>
+      <p>예제14</p>
+      <form action="#" method="#">
+        검색어를 입력해주세요 : <br />
+        <input type="search" name="search" />
+        <input type="submit" value="전송" />
+      </form>
+    </body>
+  </html>
+</DOCTYPE>

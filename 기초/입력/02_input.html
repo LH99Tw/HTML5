@@ -1,0 +1,96 @@
+<DOCTYPE html>
+  <html lang="ko">
+    <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+    </head>
+    <body>
+      <h2>input 태그</h2>
+      <hr />
+      <p>
+        input 태그는 사용자가 다양한 타입의 데이터를 입력할 수 있는 태그이다.
+      </p>
+      <ol>
+        <li>text : 한줄 텍스트 입력</li>
+        <li>password : 비밀번호 입력</li>
+        <li>radio : 여러 항목 중 하나 선택</li>
+        <li>checkbox : 여러 항목 중 다중 선택</li>
+        <li>file : 파일 업로드</li>
+        <li>textarea : 여러줄 텍스트 입력</li>
+        <li>select : 드롭다운 목록</li>
+        <li>button : 버튼</li>
+        <li>submit : 전송 버튼</li>
+        <li>fieldset : 그룹화</li>
+      </ol>
+      <hr />
+      <h3>텍스트입력</h3>
+      <p>예제1</p>
+      <form action="#" method="#">
+        아이디를 입력해주세요 : <br />
+        <input type="text" name="id">
+      </form><hr
+      <p>예제2</p>
+      <form action="#" method="#">
+        아이디를 입력해주세요 : <br />
+        <input type="text" name="id" placeholder="아이디를 입력해주세요">
+        <p>placeholder 속성은 입력 필드에 힌트를 제공하는 속성이다.</p><hr>
+        <h3>비밀번호입력</h3>
+        <p>예제3</p>
+        <form action="#" method="#">
+            비밀번호를 입력해주세요 : <br>
+            <input type="password" name="pwd">
+            <p>password 타입은 입력한 데이터가 보이지 않는다.</p><hr>
+        <h3>라디오버튼</h3>
+        <p>예제4</p>
+        <form action="#" method="#">
+            성별을 선택해주세요 : <br>
+            <input type="radio" name="gender" value="male" checked>남자
+            <input type="radio" name="gender" value="female">여자
+            <ul>
+                <li>checked 속성은 미리 선택된 상태로 보여주는 속성이다.</li>
+                <li>name 속성은 이름을 지정해주는 속성이며, 데이터를 처리해야하는 페이지에서 사용한다. 같은 라디오 타입 옵션들은 반드시 같은 name 속성을 가지고 있어야 합니다.</li>
+            </ul><hr>
+            <h3>체크박스</h3>
+            <p>예제5</p>
+            <form action="#" method="#">
+                취미를 선택해주세요 : <br>
+                <input type="checkbox" name="hobby" value="reading">독서
+                <input type="checkbox" name="hobby" value="traveling">여행
+                <input type="checkbox" name="hobby" value="exercise">운동
+                <input type="checkbox" name="hobby" value="music" disabled>음악
+            </form>
+            <ul>
+                <li>disabled 속성은 비활성화 상태로 보여주는 속성이다.</li>
+            </ul><hr>
+            <h3>파일 선택</h3>
+            <p>예제6</p>
+            <form action="#" method="#">
+                파일을 선택해주세요 : <br>
+                <input type="file" name="upload" accept="image/*">
+            </form>
+            <ul></ul>
+                <li>accept 속성은 파일 업로드 시 허용되는 파일 형식을 지정하는 속성이다.</li>
+            </ul><hr>
+            <h3>텍스트 박스</h3>
+            <p>예제7</p>
+            <form action="#" method="#">
+                Memo : <br>
+                <textarea name="memo" rows="5" cols="30"></textarea>
+            </form>
+        </form>
+        
+      </form>
+      <h3>필드셋</h3>
+      <p>예제8</p>
+      <form action="#" method="#">
+        <fieldset>
+            <legend>회원 가입</legend>
+            아이디 : <input type="text" name="id"><br><br>
+            비밀번호 : <input type="password" name="pwd">
+        </fieldset>
+      </form>
+    </body>
+  </html>
+</DOCTYPE>
