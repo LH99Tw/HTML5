@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      #myid{
+        color: yellow;
+      }
+      .myid{
+        color:red;
+      }
+      p {
+        color: green !important;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>03장 중요도(Importance)</h1>
+    <hr />
+    <p>중요도는 스타일 시트에서 스타일 규칙의 중요성을 나타내는 개념이다.</p>
+    <p class="myid" id="myid" style="color: gray">중요도는 스타일 시트에서 스타일 규칙의 중요성을 나타내는 개념이다.</p>
+    <br />
+    <p>위의 예시에서 인라인 스타일 시트, id 선택자, class 선택자, Tag 선택자 모드 쓰였는데, 모든 설정이 같은 경우 우선순위는 인라인 스타일 시트 > id 선택자 > class 선택자 > Tag 선택자 순으로 적용된다.</p>
+    <p>하지만만, 위의 결과는 초록색의 시트가 적용이 되었다. 그 이유는 !important 속성이 있기 때문이다. 다른 것들을 고려하지 않고 가장 우선적으로 고려하기 때문입니다.</p>
+    <ol>
+      <li>중요도(importance) : 속성 값 뒤에 !important 속성을 추가하면 가장 우선적으로 고려한다다.</li>
+      <li>명시도(specificity) : 모든 설정이 같을 경우 가장 나중에 선언한 것이 우선되어 적용됩니다.</li>
+      <ol>
+        <li>1. 인라인 스타일 시트</li>
+        <li>2. 외부 또는 내부 스타일 시트 : id > class > Tag</li>
+        <li>3. 브라우저 기본 값</li>
+
+      </ol>
+      <li>브라우저의 기본 값</li>
+    </ol>
+  </body>
+</html>
