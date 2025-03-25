@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table {
+        width: 50%;
+        border-collapse: collapse;
+      }
+      th,
+      td,
+      tr {
+        text-align: center;
+        border: 1px solid black;
+      }
+      tr:nth-child(even) {
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>05장. 테이블 다루기</h1>
+    <hr />
+    <ul>
+      <li>표의 선 겹치기 지정</li>
+      <ul>
+        <li>border-collapse : collapse;</li>
+      </ul>
+      <li>nth-child(숫자/even, odd)</li>
+      <ul>
+        <li>특정 순서에 있는 요소를 선택할 때 사용하는 선택자</li>
+      </ul>
+    </ul>
+    <table>
+      <thead>
+        <tr>
+          <th>이름</th>
+          <th>학과</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>홍길동</td>
+          <td>컴퓨터공학과</td>
+        </tr>
+        <tr>
+          <td>이순신</td>
+          <td>영어영문학과</td>
+        </tr>
+        <tr>
+          <td>대한</td>
+          <td>자동차학과</td>
+        </tr>
+        <tr>
+          <td>민국</td>
+          <td>문헌정보학과</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
